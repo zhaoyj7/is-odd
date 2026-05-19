@@ -8,7 +8,7 @@ if(!function_exists('is_odd')){
 function is_odd($num) 
 {
     $result = abs($num);
-    if (!is_numeric($value) || is_bool($value) || is_null($value)) {
+    if (!is_numeric($num) || is_bool($num) || is_null($num)) {
         throw new TypeError('expected a number');
     }
     if (!is_int($result) && $result != $result) {
